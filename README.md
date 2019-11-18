@@ -17,14 +17,14 @@ After the ```node liri.js``` text type...
     * Name of the venue
     * Location of the venue
     * Date of the event ("MM/DD/YYYY")
-(images/concert-this.png)
+![concert-this](images/concert-this.png)
 
 * ```spotify-this-song``` and then the name of a song (e.g. ```spotify-this-song The Other Side of Paradise```) to show the following information to the bash window:
     * Artist(s)
     * Song name
     * A preview link of the song from Spotify
     * Album that the song is from
-(images/spotify-this-song.png)
+![spotify-this-song](images/spotify-this-song.png)
 
 * ```movie-this``` and a movie name (e.g. ```movie-this Rush Hour 2```)  to output the following information to your bash window:
     ```
@@ -37,7 +37,7 @@ After the ```node liri.js``` text type...
        * Plot of the movie.
        * Actors in the movie.
     ```
-(images/movie-this.png)
+![movie-this](images/movie-this.png)
 
 ## Technology
 The [Axios npm package](https://www.npmjs.com/package/axios) was used to send requests to the [Bands in Town](http://www.artists.bandsintown.com/bandsintown-api), [Spotify](https://www.npmjs.com/package/node-spotify-api), and [OMDB APIs](http://www.omdbapi.com).
