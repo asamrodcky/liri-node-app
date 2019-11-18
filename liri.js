@@ -68,6 +68,10 @@ function callEvent() {
 
 function callSong() {
 
+    if(!item){
+        item = "Amber"
+    }
+
     spotify.search({ type: 'track', query: item }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
@@ -81,6 +85,11 @@ function callSong() {
 
 //Axios call for OMDB API data, to be placed in switch "movie-this" switch command
 function callMovie() {
+    
+    if(!item){
+        item = "Mr. Nobody"
+    }
+
     // Include the axios npm package (Don't forget to run "npm install axios" in this folder first!)
     axios
     axios.get("http://www.omdbapi.com/?t=" + item + "&y=&plot=short&apikey=" + OMDB).then(
